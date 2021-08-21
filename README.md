@@ -9,7 +9,7 @@ Using this code with an Arduino, you'll have a separate device for pedals which 
 - 1 linear hall effect sensor for each faulty pedal.
 - 1 neodymium magnet for each faulty pedal.
 - Soldering tools to solder wires to the sensor(s)
-- An Arduino that has built-in USB (ATmega32U4 microcontroller). Arduino Leonardo and Micro have this feature.
+- An Arduino that has built-in USB communication support (ATmega32U4 microcontroller). Arduino Leonardo and Micro have this feature.
 - Wires. phone cables with 4 wires could be used, 3 of them would be used for 1 pedal, 1 for GND, 1 for 5V, and 1 for the sensor output.
 - A cable to connect the Arduino board to the computer.
 
