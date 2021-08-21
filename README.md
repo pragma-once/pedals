@@ -45,7 +45,7 @@ Search for your own sensor model to find out which pins are which.
 1. Connect the Arduino to the computer.
 2. Download Arduino IDE or use the online tool coupled with the plugin.
 3. Install Joystick library: https://github.com/MHeironimus/ArduinoJoystickLibrary
-4. Open the .uno file downloaded from this repository or just paste the code into the sketch.
+4. Open `pedals.ino` downloaded from this repository or just paste the code into the sketch.
 5. Set the settings by changing the const variable values with all CAPS names at the start of the file and upload to the board.
 
 Don't forget to disable the test print options before the final upload if they're enabled.
