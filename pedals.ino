@@ -59,10 +59,11 @@ const int PEDAL_OUTER_DEADZONES[] = { PEDALS_OUTER_DEADZONE, PEDALS_OUTER_DEADZO
 // Reversed Power of 4: x_r = 1 - x; x_r = x_r * x_r; return 1 - (x_r * x_r);
 FLOAT_TYPE INTERPOLATE(const int& index, const FLOAT_TYPE& x)
 {
+    FLOAT_TYPE x2;
     switch (index)
     {
         case 0: return x; // pedal 0: x (linear)
-        case 1: FLOAT_TYPE x2 = x * x; return x2 * x2; // pedal 1: x^4 (suitable for brake pedal with a progressive spring)
+        case 1: x2 = x * x; return x2 * x2; // pedal 1: x^4 (suitable for brake pedal with a progressive spring)
         case 2: return x; // pedal 2: x (linear)
         default: return x;
     }
