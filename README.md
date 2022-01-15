@@ -6,24 +6,24 @@ Using this code with an Arduino, you'll have a separate device for pedals which 
 
 # Requirements
 
-- 1 linear hall effect sensor for each faulty pedal.
+- 1 linear hall effect sensor for each faulty pedal. Can be used with female jumper cables without soldering.
 - 1 neodymium magnet for each faulty pedal.
-- Soldering tools to solder wires to the sensor(s)
+- May need soldering tools to solder wires.
 - An Arduino that has built-in USB communication support (ATmega32U4 microcontroller). Arduino Leonardo and Micro have this feature.
-- Wires. phone cables with 4 wires could be used, 3 of them would be used for 1 pedal, 1 for GND, 1 for 5V, and 1 for the sensor output.
+- Wires. Minimum number of wires can be 1 for shared GND, 1 for shared 5V (VCC) and 1 per pedal for sensors' output. If you're using cables with connectors, do not plug them to anything else than your own wires, this may damage the Arduino.
 - A cable to connect the Arduino board to the computer.
 
 # Installation
 
 ## Hardware
 
-Solder the 3 wires to the sensor pins.
-Tape around the unprotected wires to prevent them from touching metal or the pins to connect to each other.
+Connect the 3 wires to the sensor pins.
+You can tape around the unprotected wires to prevent them from touching metal or the pins to connect to each other.
 Attach the sensor to one arm of the pedal, preferably the one that is mounted and doesn't move, and a neodymium magnet to the other arm.
 It's recommended to align them in a way so that when the pedal is released, the edge of the magnet is close to the edge of the sensor and when depressed the center of the magnet is close to the center of the sensor but doesn't go past the center, or vice versa (at the edge when depressed and centers close without passing when released).
 The magnet pole doesn't matter.
 Make sure that the magnet doesn't slide.
-At the other end, connect the wires to GND, 5V and one of A0 to A2 (starting from A0).
+At the other end (Arduino), connect the wires to GND, 5V and one of A0 to A2 (starting from A0).
 Make sure to connect the wires to the correct pins by looking up the sensor pins. VCC should be connected to 5V.
 
 For example:
