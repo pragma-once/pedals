@@ -53,10 +53,10 @@ const int PEDAL_OUTER_DEADZONES[] = { PEDALS_OUTER_DEADZONE, PEDALS_OUTER_DEADZO
 // Linear: return x;
 // Power of 2: return x * x;
 // Power of 3: return x * x * x;
-// Power of 4: FLOAT_TYPE x2 = x * x; return x2 * x2;
-// Reversed Power of 2: x_r = 1 - x; return 1 - (x_r * x_r);
-// Reversed Power of 3: x_r = 1 - x; return 1 - (x_r * x_r * x_r);
-// Reversed Power of 4: x_r = 1 - x; x_r = x_r * x_r; return 1 - (x_r * x_r);
+// Power of 4: x2 = x * x; return x2 * x2;
+// Reversed Power of 2: x2 = 1 - x; return 1 - (x2 * x2);
+// Reversed Power of 3: x2 = 1 - x; return 1 - (x2 * x2 * x2);
+// Reversed Power of 4: x2 = 1 - x; x2 = x2 * x2; return 1 - (x2 * x2);
 FLOAT_TYPE INTERPOLATE(const int& index, const FLOAT_TYPE& x)
 {
     FLOAT_TYPE x2;
