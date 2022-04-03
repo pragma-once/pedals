@@ -78,7 +78,7 @@ Joystick_ Joystick(
     JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
     0, 0, // buttonCount, hatSwitchCount
     true, true, true, // X, Y, Z (Used for pedals 0, 1, and 2)
-    false, false, false, // Rx, Ry, Yz
+    false, false, false, // Rx, Ry, Rz
     false,  // Rudder
     false, // Throttle
     false,  // Accelerator
